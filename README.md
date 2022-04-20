@@ -151,6 +151,9 @@ response
 
 How to run code:
 ---
+Start mongodb -> open terminal -> type 'mongod' <br/>
+<br/>
+
 Run the following commands from VS code project terminal:<br/>
 npm init -y <br/>
 npm install <br/>
