@@ -1,0 +1,38 @@
+<html>
+
+<head>
+   <link rel="stylesheet" href="login-style.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration Form</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.js"
+   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <script src="frontend.js"></script>
+</head>
+<br>
+<br>
+<br>
+
+<body>
+   <form >
+      <h1>TrueWeather</h1>
+      <legend>Registration Form</legend>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder ='Enter a valid email'required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder ='Enter a valid password' minlength="6" required>
+      <br>
+      <div>
+         <button id = "register" type="button">Submit</button>
+         <br>
+         <div>
+            <br>
+            <button onclick="location.href='http://localhost:3000/index.html'" type="button">
+               Already have an account?</button>
+         </div>
+      </div>
+   </form>
+</body>
+
+</html>

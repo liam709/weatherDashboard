@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="stylesheet" href="login-style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="frontend.js"></script>
+</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+    </head>
+    <br>
+    <br>
+    <br>
+      <form action="/login" method="post">
+        <h1>TrueWeather</h1>
+          <legend>Login Form</legend>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required>
+          <br>
+          <div>
+        <button id = "login" type="submit">Login</button>  
+        </div>
+        <br>
+        <div>
+         <button onclick="location.href='http://localhost:3000/register.html'" type="button">
+            Don't have an account?</button>
+      </div>
+      </form>
+
+      <form class = 'formSecondary'>
+         <div>
+            <p>Prefer to view weather information as guest?</p>
+            <button onclick="location.href='http://localhost:3000/guest.html'" type="button">
+               Login as Guest</button>
+         </div>
+      </form>
+    </body>
+    </html>
