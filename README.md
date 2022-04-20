@@ -2,11 +2,13 @@
 A weather forecast application created with MEN (Mongo, Express, Node). 
 
 Models:
+---
 We have a user model which possesses the attributes of user which includes the 
 username, password, and favourite cities. This model is important for our application because we 
 are building a guest-user based application. 
 
 Routes and Controllers:
+---
 
 The following are the paths involved in our application. We created custom modules for 
 each of these paths to access when the appropriate HTTP request is called.
