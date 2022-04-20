@@ -52,7 +52,7 @@ unsuccessful, will return user an error message.
 
 
 
-Front End:
+Views:
 -- 
 guest.html:
 	This is the view of a guest user with no log in account. This view is necessary because it allows one to access weather information without an account, although some perks are lost. In this view, one can only do basic weather tasks. The following are possible:
@@ -89,7 +89,7 @@ OpenWeather API – This helps us deliver weather information to the user.
 
 Animation effects:
 ---
-	We used setInterval() to implement an in-built clock. It repeats a set of code to always give the current time of the user.
+We used setInterval() to implement an in-built clock. It repeats a set of code to always give the current time of the user.
 
 How to run code:
 ---
