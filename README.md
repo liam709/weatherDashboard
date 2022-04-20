@@ -93,7 +93,6 @@ We used setInterval() to implement an in-built clock. It repeats a set of code t
 
 Tests:
 ---
-Tests:
 We used Mocha for testing our potential usage scenarios. We tested the user registration/login API calls and the weather-related API calls. 
 
 The following tests were covered for the user registration/login API calls: 
