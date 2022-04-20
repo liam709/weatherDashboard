@@ -91,6 +91,66 @@ Animation effects:
 ---
 We used setInterval() to implement an in-built clock. It repeats a set of code to always give the current time of the user.
 
+Tests:
+---
+Tests:
+We used Mocha for testing our potential usage scenarios. We tested the user registration/login API calls and the weather-related API calls. 
+
+The following tests were covered for the user registration/login API calls: 
+
+1. SUCCESS 1. POST - Registered new user successfully'
+This test takes in a valid email, and valid password and posts the object to our ‘users’ collection.
+
+2. SUCCESS 2. POST - Login user successfully
+This test takes the registered email and password from the previous test and checks if it exists in 
+our ‘users’ collection. 
+
+3. FAIL 1. POST - Fail to register user with invalid email
+This test tries to register with an invalid email. In this case, the email object is an integer so the 
+test does not pass the valid email test and returns that user must enter a valid email. 
+
+4. Fail 2. POST - Fail to login user with invalid email
+This test looks for a specific email address in our ‘users’ collection, but since the email entered 
+does not currently exist in the collection, it fails to login.
+
+5. Fail 3. POST - Fail to login user with invalid password
+This test finds an existing matching email in the ‘users’ collection, but since the password 
+entered does not match that of the object of entered email, it returns that the user must enter a 
+valid password.
+
+The following tests were covered for the weather-related API calls: 
+
+1. Success 1. GET - / (Test getting the guest home page)
+This test gets the home page of a guest, and it returns the expected response.
+
+2. Success 2. GET - /home (Test getting home page with no bookmarks)
+This test gets the home page of a user with no bookmarks. There isn’t really a failure scenario for
+this, so we have just a success step.
+
+3. Fail 1. POST - /search (Test invalid city name search)
+This test tries to search for an invalid city which is a common failure case with this type of app,
+and it returns the expected response.
+
+4. Fail 2. POST - /bookmark (Test invalid city bookmark)
+This test tries to bookmark an invalid city, and it returns the expected response.
+
+5. Fail 3. DELETE - /delete (Test invalid city bookmark deletion)
+This test tries to delete a city that is not bookmarked in the database, and it returns the expected 
+response.
+
+6. Success 3. POST - /search (Test valid city name search)
+This test searches up a city with a valid city name and it returns the expected response.
+
+7. Success 4. POST - /bookmark (Test valid city bookmark)
+This test bookmarks a valid city name and it returns the expected response.
+
+8. Success 5. GET - /home (Test getting home page with bookmarks)
+This test gets the home page of a user with bookmarks, and it returns the expected response.
+
+9. Success 6. DELETE - /delete (Test valid city bookmark deletion)
+This test deletes the bookmark of a valid city in the database, and it returns the expected
+response
+
 How to run code:
 ---
 Run the following commands from VS code project terminal:<br/>
