@@ -93,11 +93,11 @@ Animation effects:
 
 How to run code:
 ---
-Run the following commands from VS code project terminal:
-npm init -y
-npm install
-cd server
-node app.js
+Run the following commands from VS code project terminal:<br/>
+npm init -y <br/>
+npm install <br/>
+cd server <br/>
+node app.js <br/>
 Go to http://localhost:3000/
 
 
