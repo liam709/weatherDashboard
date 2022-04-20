@@ -80,6 +80,7 @@ Get forecast information over a few days for a bookmarked city (info button)– 
 Log out Button – This logs out the current user from the session. 
 
 Elements used in assembling the client side:
+---
 In our client side we have different elements being used. On the user, guest, register and login page, the buttons and what they achieve from the backend are explained in the views section. The libraries being used on the user/guest page are the following:
 Google geocoding API - This helps us get the current location of the user to display their current weather temperature.
 Google Places API – This helps the user when searching up a city to get weather information on. It displays guesses of what the user is typing under the search input field.
@@ -87,9 +88,11 @@ Darkmode.js – This helps the logged in user switch between dark/light mode for
 OpenWeather API – This helps us deliver weather information to the user.
 
 Animation effects:
+---
 	We used setInterval() to implement an in-built clock. It repeats a set of code to always give the current time of the user.
 
 How to run code:
+---
 Run the following commands from VS code project terminal:
 npm init -y
 npm install
