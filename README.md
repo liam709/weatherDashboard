@@ -53,24 +53,24 @@ unsuccessful, will return user an error message.
 
 Views:
 -- 
-guest.html:
+guest.html: <br/>
 	This is the view of a guest user with no log in account. This view is necessary because it allows one to access weather information without an account, although some perks are lost. In this view, one can only do basic weather tasks. The following are possible:
 Search a city – When the search button is clicked, it calls on the getCity function in the JS script file which sends a POST request to the server to retrieve weather information on the given city. There are restrictions in place to not allow a wring city search.
 Temperature change – When a temperature is selected from the given options, the page is refreshed to update the current temperature unit to the selected one. The default is Celsius.
 In this view, the location of the user is automatically retrieved and the weather information for the user’s location is displayed along with the current time.
 
-index.html 
+index.html  <br/>
 	This is the view on initial connection to the server. In this view, the user can enter their registered information into the required fields. When the login button is pressed, it calls on the login function and sends a POST request to the server to verify if credentials exist in the database. Once verified, the user gets redirected to their user dashboard.
 If the user has no account, they can click the ‘Don’t have an account?’ button to redirect the user to the registration page, where they can create new user credentials. 
 If the user does not wish to create an account, they can select the ‘Login as guest’ button to access the guest dashboard.
 
-register.html
+register.html <br/>
 	This is the view of the registration page. In this view, the user can enter registration credentials into the required fields, which calls the register function and makes a POST request to the server to store the field values in our database collection. The register function allows only unique emails to be stored, so no duplicates can exist in the database. 
 The email field can only be submitted if the string contains an ‘@’ symbol. 
 The password field is validated by having a minimum length, in our case: 6.
 The register view is necessary for our application because registration allows users to relog into the application and not lose their data.
 
-user.html:
+user.html: <br/>
 	This is the view of a logged in user. This view is necessary because it gives users with an account more benefits. In this view, apart from the functionalities one can do with the guest.html view, one can do the following:
 Bookmark a city – When the bookmark button is clicked on a bookmarked item, it calls on the bookmark function in the JS script file which sends a POST request to the server to store the given city in the database. The page then refreshes to display the bookmarked city. There are restrictions in place to not allow a wring city bookmark and not bookmark duplicates.
 
