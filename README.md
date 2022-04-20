@@ -13,37 +13,36 @@ Routes and Controllers:
 The following are the paths involved in our application. We created custom modules for 
 each of these paths to access when the appropriate HTTP request is called.
 
-Route: / 
-
+Route: / <br/>
 Controller: guest()
 This controller takes the user to the guest home page where they can get weather information on 
 different places or log in
 
-Route: /user 
+Route: /user <br/>
 Controller: user()
 Thus controller takes the user to a user home page, provided that they have an account, and this 
 home page comes with perks like forecasts and bookmarking.
 
-Route: /search
+Route: /search <br/>
 Controller: search()
 This controller retrieves weather information on the search city to be displayed
 
-Route: /boomark 
+Route: /boomark <br/>
 Controller: bookmark()
 This controller saves a favorite city to the database to be displayed on the users home page
 
-Route: /delete 
+Route: /delete <br/>
 Controller: deleteBookmark()
 This controller removes a city from the database
 
-Route: /register
+Route: /register <br/>
 Controller: registerUser():
 This controller creates a new user object from our User.js model, and then saves the email and 
 password of the User in the ‘users’ collection of our Mongo db. Currently password is being 
 stored as the exact string entered. We are aware this could be a safety concern in the future and 
 are looking into encrypting the password using bcrypt or passport.
 
-Route: /login
+Route: /login <br/>
 Controller: loginUser():
 This controller reads the mongoDB ‘users’ collection and checks that if the email entered on 
 client side exists in the database, and then checks if the password entered on client-side matches 
