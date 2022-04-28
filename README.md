@@ -1,6 +1,9 @@
 # trueWeather
 A weather forecast application created with MEN (Mongo, Express, Node). 
 
+![image](https://user-images.githubusercontent.com/32212429/165828346-4e38629c-7b3f-4164-8ad6-896e41935fd9.png)
+
+
 Models:
 ---
 We have a user model which possesses the attributes of user which includes the 
