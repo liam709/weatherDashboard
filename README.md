@@ -1,5 +1,5 @@
 # trueWeather
-A weather forecast application created with MEN (Mongo, Express, Node). 
+A weather forecast application created with MEN (Mongo, Express, Node, Javascript/HTML/CSS, Jquery). 
 
 ![image](https://user-images.githubusercontent.com/32212429/165828498-3ebf0fba-91cf-45ad-9e76-3ce1a439cc24.png)
 ![image](https://user-images.githubusercontent.com/32212429/165828481-c4f99217-7681-4542-8663-9f352521dad3.png)
